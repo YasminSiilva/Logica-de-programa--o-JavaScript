@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //Algoritimo qiue solicita uma entrada e se 
+            //encerra quando não for um numero.
+            let numero =0
+
+            do{
+                numero = prompt("Insira um numero")
+                console.log(numero)
+            }while(parseInt(numero))
+
+
+
+            let entrada = prompt("inserir um nome")
+
+            //repetir até que 'sair' seja inserido
+
+            while(entrada != "sair"){
+                switch(entrada){
+                    case "Lucas":
+                        alert("Olá Lucas")
+                        break;
+                    default:     
+                    alert("Quem é você")
+                    break;
+                }
+                entrada = prompt("Inserir um nome")
+            }
+            
+
+
+            //(Praticar Utilizando o "Switch" crie uma função que:)
+            //Utilize o "Switch"
+            //receba um número de 1 a 100
+            //calcule em qual dezena ele está 
+
+            
+            function calcularDezena(numero) {
+                if (numero < 1 || numero > 100) {
+                    return "Por favor, insira um número de 1 a 100.";
+                }
+                 switch (Math.floor(numero / 10)) {
+                    case 0:
+                        return "O número está na dezena dos 0.";
+                        case 1:
+                            return "O número está na dezena dos 10.";
+                            case 2:
+                                return "O número está na dezena dos 20.";
+                                 case 3:
+                                    return "O número está na dezena dos 30.";
+                                    case 4:
+                                         return "O número está na dezena dos 40.";
+                                          case 5:
+                                            return "O número está na dezena dos 50.";
+                                             case 6:
+                                                  return "O número está na dezena dos 60.";
+                                                   case 7:
+                                                      return "O número está na dezena dos 70.";
+                                                      case 8:
+                                                        return "O número está na dezena dos 80.";
+                                                        case 9:
+                                                             return "O número está na dezena dos 90.";
+                                                               case 10:
+                                                                return "O número está na dezena dos 100.";
+                                                             }
+                                                            }
+                                                            let numeroUsuario = prompt("Informe um numero ")
+
+                      //Math.floor - é utilizar para arredondar um número
+                      //decimal para um numero inteiro. Ele remove a parte
+                      //decimal do numero e retorna a parte inteira.
+                      
+                      //33/10= 3*10; 30
+
+
+                      //Switch para determinar a familia da dezena 
+
+    
+
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

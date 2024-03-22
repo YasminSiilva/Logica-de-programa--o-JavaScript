@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script>
+        var quantidadeParcelas = parseInt(prompt("Digite a quantidade de parcelas:"));
+        for (var i = 1; i <= quantidadeParcelas; i++) {
+            var valorParcela = parseFloat(prompt("Digite o valor da parcela " + i + ":"));
+            if (i === 1) {
+                console.log("Parcela " + i + " (Simples): R$" + valorParcela.toFixed(2))
+            } else {
+                console.log("Parcela " + i + ": R$" + valorParcela.toFixed(2));
+            }
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

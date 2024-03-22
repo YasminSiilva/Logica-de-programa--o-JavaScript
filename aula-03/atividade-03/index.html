@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script>
+            //calculadora de preço
+
+            var somar = (a,b) =>a + b 
+            var subtrair = (a,b) => - b
+            var CalcularICMS = (x) => x * 0.21
+
+            var precoProduto = 500
+            var desconto = 50
+
+            //Calculo o PrecoProduto + ICMS - descoto
+            var ICMS = CalcularICMS(precoProduto)
+            var soma = somar(precoProduto + ICMS)
+            var novoProduto = subtrair(soma,desconto)
+
+            console.log(novoProduto)
+            
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
